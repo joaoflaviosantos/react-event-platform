@@ -17,7 +17,7 @@ export default function Lesson(props: LessonProps) {
   const availableAtDateFormatted = format(props.availableAt, "EEEE' • 'MMMM' 'd' • 'k'h'mm")
 
   return(
-    <Link to={`/lesson/${props.slug}`} className='group'>
+    <Link to={`/event/lesson/${props.slug}`} className='group'>
       <span className="text-gray-300">
         { availableAtDateFormatted }
       </span>
