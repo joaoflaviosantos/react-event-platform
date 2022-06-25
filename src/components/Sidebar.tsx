@@ -2,7 +2,7 @@ import { gql, useQuery } from "@apollo/client"
 import Lesson from "./Lesson"
 
 const GET_LESSONS_QUERY = gql`
-  query {
+  query GetLessons {
     lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
       id
       lessonType
