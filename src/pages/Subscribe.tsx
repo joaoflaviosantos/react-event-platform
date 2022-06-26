@@ -1,8 +1,14 @@
 import { useState, FormEvent } from "react"
-import Logo from "../components/micro/Logo"
-import codeMockup from "/src/assets/code-mockup.png"
 import { useNavigate } from "react-router-dom"
+
+// IMPORT GRAPHQL CODE
 import { useCreateSubscriberMutation } from "../graphql/generated"
+
+// IMPORT COMPONENTS
+import Logo from "../components/micro/Logo"
+
+// IMPORT STATIC IMAGE
+import codeMockup from "/src/assets/code-mockup.png"
 
 export default function Subscribe() {
   const navigate = useNavigate()
